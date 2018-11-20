@@ -3,10 +3,11 @@
     {
       "type": "eventHubTrigger",
       "name": "myEventHubMessage",
-      "connection": "logging01_RootManageSharedAccessKey_EVENTHUB",
-      "eventHubName": "logs",
+      "connection": "NamHUB_RootManageSharedAccessKey_EVENTHUB",
+      "eventHubName": "insights-operational-logs",
       "consumerGroup": "$Default",
-      "direction": "in"
+      "direction": "in",
+      "cardinality": "many"
     }
   ]
 }
